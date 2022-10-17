@@ -34,6 +34,7 @@ section .container {
 
 #developers .container .developer:hover {
     background-color: rgb(180, 154, 121);
+    transform: translateY(-15px);
 }
 
 #developers .container .developer .dev-img {
@@ -50,5 +51,11 @@ section .container {
 }
 
 #developers .container .developer .dev-info {
-    text-align: justify;
+    text-align: left;
+    line-height: 20px;
+}
+
+#developers .container .developer .socmeds img {
+    width: 50px;
+    margin: 10px;
 }

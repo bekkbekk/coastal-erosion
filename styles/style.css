@@ -126,12 +126,17 @@ section .container {
     box-shadow: 0 0 5px black;
     border-radius: 15px;
     margin-top: 32px;
+    text-align: center;
 }
 
 #definition .after-erosion .container h2 {
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#definition .after-erosion .container .yt-vid {
     margin-bottom: 10px;
 }
 
@@ -161,10 +166,18 @@ section .container {
     margin: 20px 0;
 }
 
-#facts .container .coastline-img {
+#facts .container .coast-vid {
     float: left;
-    width: 400px;
+    width: 350px;
     margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+#facts .container .coastline-img {
+    float: right;
+    width: 350px;
+    margin-left: 15px;
     margin-bottom: 15px;
     border: 1px solid black;
 }
@@ -198,4 +211,29 @@ section .container {
 #facts .container article p {
     font-size: 20px;
     text-align: justify;
+}
+
+/* PETA */
+#peta {
+    padding-top: 85px;
+}
+
+#peta .container {
+    padding: 32px;
+    padding-top: 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#peta .container h2 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#peta .container img {
+    width: 500px;
+    margin-top: 15px;
+    border: 2px outset black;
 }

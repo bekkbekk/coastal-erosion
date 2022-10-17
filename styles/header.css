@@ -25,6 +25,11 @@ header nav h3 {
     cursor: pointer;
 }
 
+header nav h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header nav ul {
     display: flex;
 }

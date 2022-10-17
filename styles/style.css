@@ -57,7 +57,7 @@ section .container {
 
 /* DEFINITION */
 #definition {
-    background-image: linear-gradient(white, #c1865d);
+    background-image: linear-gradient(white, #f0e5d7);
 }
 
 #definition .enumerations .container {
@@ -93,7 +93,7 @@ section .container {
     padding: 32px;
     box-shadow: 0 0 5px black;
     border-radius: 15px;
-    background-image: linear-gradient(white, #c1865d);
+    background-image: linear-gradient(white, #f0e5d7);
 }
 
 #definition .todos .container h2 {
@@ -149,7 +149,7 @@ section .container {
 /* FACTS */
 #facts {
     padding-top: 85px;
-    background-color: #f0e5d7;
+    background-image: linear-gradient(white, #f0e5d7);
 }
 
 #facts .container {
@@ -180,6 +180,7 @@ section .container {
     margin-left: 15px;
     margin-bottom: 15px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 #facts .container article {
@@ -198,6 +199,7 @@ section .container {
     margin-left: 15px;
     margin-bottom: 15px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 #facts .container article .hazard-title {
@@ -216,7 +218,7 @@ section .container {
 /* PETA */
 #peta {
     padding-top: 85px;
-    background-color: #c69e61;
+    background-image: linear-gradient(white, #f0e5d7);
 }
 
 #peta .container {
@@ -237,11 +239,13 @@ section .container {
     width: 500px;
     margin-top: 15px;
     border: 2px outset black;
+    cursor: pointer;
 }
 
 /* REFRENCES */
 #references {
     padding-top: 85px;
+    background-image: linear-gradient(white, #f0e5d7);
 }
 
 #references .container {

@@ -5,13 +5,14 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-section .container {
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
+section {
+    background-color: #f0e5d7;
 }
 
 #developers .container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
     padding-top: 85px;
     display: flex;
     justify-content: center;

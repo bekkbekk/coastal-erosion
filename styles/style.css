@@ -83,6 +83,7 @@ section .container {
 #definition .enumerations .container h2 {
     font-size: 32px;
     font-weight: 800;
+    text-align: center;
     text-transform: uppercase;
 }
 

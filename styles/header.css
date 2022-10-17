@@ -3,10 +3,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(180, 154, 121, 0.5);
+    background-color: rgb(180, 154, 121);
     color: white;
     box-shadow: 0 0 10px black;
-    backdrop-filter: blur(10px);
 }
 
 header  nav {

@@ -216,6 +216,7 @@ section .container {
 /* PETA */
 #peta {
     padding-top: 85px;
+    background-color: #c69e61;
 }
 
 #peta .container {
@@ -236,4 +237,31 @@ section .container {
     width: 500px;
     margin-top: 15px;
     border: 2px outset black;
+}
+
+/* REFRENCES */
+#references {
+    padding-top: 85px;
+}
+
+#references .container {
+    padding: 32px;
+    padding-top: 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
+}
+
+#references .container h2 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#references .container .source {
+    margin: 20px 0;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 25px;
+    padding-left: 35px;
+    text-indent: -35px;
 }

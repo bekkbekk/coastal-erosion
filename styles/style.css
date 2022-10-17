@@ -10,23 +10,27 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* --------------- body ------------------ */
 
-body {
-    height: 200vh;
+section {
+    min-height: 100vh;
 }
 
 section .container {
     width: 80%;
     max-width: 960px;
     margin: 0 auto;
-    height: 100vh;
 }
 
+/* HOME */
 #home {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/coastal.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coastal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -35,11 +39,13 @@ section .container {
     display: flex;
     align-items: center;
     color: white;
+    min-height: 100vh;
+    padding-top: 85px;
 }
 
-/* #home .container .coastal-info {
-
-} */
+#home .container .coastal-info {
+    margin-left: 50px;
+}
 
 #home .container .coastal-info h2 {
     letter-spacing: 10px;
@@ -50,4 +56,62 @@ section .container {
 
 #home .container .coastal-info article {
     line-height: 28px;
+}
+
+
+/* DEFINITION */
+
+#definition {
+    background-image: linear-gradient(white, #c1865d);;
+}
+
+#definition .enumerations .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding-top: 85px;
+    padding-bottom: 32px
+}
+
+#definition .enumerations .container h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#definition .enumerations .container ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#definition .todos {
+    /* color: white; */
+}
+
+#definition .todos .container {
+    padding: 32px 0;
+}
+
+#definition .todos .container h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#definition .todos .container .content {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#definition .todos .container .content .title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+#definition .todos .container .content .demo-img {
+    width: 500px;
+    height: 281px;
+    margin: 20px 0;
+    border: 2px solid black;
+    cursor: pointer;
 }

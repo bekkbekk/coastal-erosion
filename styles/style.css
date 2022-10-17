@@ -150,13 +150,21 @@ section .container {
 
 #facts {
     padding-top: 85px;
-    /* background-image: linear-gradient(#c1865d, white); */
+    background-color: lightgray;
+}
+
+#facts .container {
+    padding: 32px;
+    padding-top: 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
 }
 
 #facts .fact-title {
     font-size: 50px;
     text-align: center;
     text-transform: uppercase;
+    margin: 20px 0;
 }
 
 #facts .container .coastline-img {
@@ -171,6 +179,10 @@ section .container {
     font-size: 20px;
     text-align: justify;
     margin: 20px 0;
+}
+
+#facts .container .hazard {
+    margin-top: 32px;
 }
 
 #facts .container article .hazard-img {

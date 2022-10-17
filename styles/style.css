@@ -83,6 +83,7 @@ section .container {
 #definition .enumerations .container h2 {
     font-size: 32px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 #definition .enumerations .container .grid-element ul {
@@ -104,6 +105,7 @@ section .container {
     font-size: 32px;
     font-weight: 800;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #definition .todos .container .content {

@@ -14,7 +14,9 @@ html {
 
 section {
     min-height: 100vh;
+    padding-top: 85px;
     padding-bottom: 50px;
+    background-image: linear-gradient(white, #f0e5d7);
 }
 
 section .container {
@@ -25,6 +27,7 @@ section .container {
 
 /* HOME */
 #home {
+    padding: 0;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coastal.jpg);
     background-size: cover;
@@ -56,15 +59,10 @@ section .container {
 
 
 /* DEFINITION */
-#definition {
-    background-image: linear-gradient(white, #f0e5d7);
-}
-
 #definition .enumerations .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-    padding-top: 85px;
     padding-bottom: 32px;
 }
 
@@ -147,11 +145,6 @@ section .container {
 
 
 /* FACTS */
-#facts {
-    padding-top: 85px;
-    background-image: linear-gradient(white, #f0e5d7);
-}
-
 #facts .container {
     padding: 32px;
     padding-top: 10px;
@@ -216,12 +209,17 @@ section .container {
     text-align: justify;
 }
 
-/* PETA */
-#peta {
-    padding-top: 85px;
-    background-image: linear-gradient(white, #f0e5d7);
+#facts .noah {
+    margin-top: 32px;
 }
 
+#facts .noah h3 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* PETA */
 #peta .container {
     padding: 32px;
     padding-top: 10px;
@@ -244,11 +242,6 @@ section .container {
 }
 
 /* REFRENCES */
-#references {
-    padding-top: 85px;
-    background-image: linear-gradient(white, #f0e5d7);
-}
-
 #references .container {
     padding: 32px;
     padding-top: 10px;

@@ -219,6 +219,16 @@ section .container {
     text-transform: uppercase;
 }
 
+#facts .noah .feu-hazardmap img {
+    width: 100%;
+    margin-top: 0px;
+}
+
+#facts .noah .feu-hazardmap p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* PETA */
 #peta .container {
     padding: 32px;

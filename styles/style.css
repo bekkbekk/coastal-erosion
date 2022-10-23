@@ -1,275 +1,245 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 /* --------------- body ------------------ */
-
 section {
-    min-height: 100vh;
-    padding-top: 85px;
-    padding-bottom: 50px;
-    background-image: linear-gradient(white, #f0e5d7);
+  min-height: 100vh;
+  padding-top: 85px;
+  padding-bottom: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f0e5d7));
+  background-image: linear-gradient(white, #f0e5d7);
 }
-
 section .container {
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-/* HOME */
 #home {
-    padding: 0;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coastal.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 0;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/coastal.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coastal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 #home .container {
-    display: flex;
-    align-items: center;
-    color: white;
-    min-height: 100vh;
-    padding-top: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  min-height: 100vh;
+  padding-top: 85px;
 }
-
 #home .container .coastal-info {
-    margin-left: 50px;
+  margin-left: 50px;
 }
-
 #home .container .coastal-info h2 {
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    font-size: 64px;
-    margin-bottom: 24px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 64px;
+  margin-bottom: 24px;
 }
-
 #home .container .coastal-info article {
-    line-height: 28px;
+  line-height: 28px;
 }
 
-
-/* DEFINITION */
 #definition .enumerations .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding-bottom: 32px;
 }
-
-#definition .enumerations .grid-element {
-    border-radius: 15px;
-    box-shadow: 0 0 5px black;
-    padding: 20px;
-}
-
 #definition .enumerations .container h2 {
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-#definition .enumerations .container .grid-element ul {
-    margin-left: 30px;
+#definition .enumerations .grid-element {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  padding: 20px;
 }
-
-#definition .enumerations .container ul li {
-    font-size: 20px;
-    margin: 10px 0;
+#definition .enumerations .grid-element ul {
+  margin-left: 30px;
 }
-
+#definition .enumerations .grid-element ul li {
+  font-size: 20px;
+  margin: 10px 0;
+}
 #definition .todos .container {
-    padding: 32px;
-    box-shadow: 0 0 5px black;
-    border-radius: 15px;
-    background-image: linear-gradient(white, #f0e5d7);
+  padding: 32px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f0e5d7));
+  background-image: linear-gradient(white, #f0e5d7);
 }
-
 #definition .todos .container h2 {
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 #definition .todos .container .content {
-    margin: 20px 0;
-    text-align: center;
+  margin: 20px 0;
+  text-align: center;
 }
-
 #definition .todos .container .content .title {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
 }
-
 #definition .todos .container .content .demo-img {
-    width: 500px;
-    height: 281px;
-    margin-top: 20px;
-    border: 2px outset black;
-    cursor: pointer;
+  width: 500px;
+  height: 281px;
+  margin-top: 20px;
+  border: 2px outset black;
+  cursor: pointer;
 }
-
 #definition .after-erosion .container {
-    padding: 32px;
-    box-shadow: 0 0 5px black;
-    border-radius: 15px;
-    margin-top: 32px;
-    text-align: center;
+  padding: 32px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 15px;
+  margin-top: 32px;
+  text-align: center;
 }
-
 #definition .after-erosion .container h2 {
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
 #definition .after-erosion .container .yt-vid {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 #definition .after-erosion .container p {
-    font-size: 20px;
-    text-align: justify;
+  font-size: 20px;
+  text-align: justify;
 }
 
-
-/* FACTS */
 #facts .container {
-    padding: 32px;
-    padding-top: 10px;
-    box-shadow: 0 0 5px black;
-    border-radius: 15px;
+  padding: 32px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 15px;
 }
-
-#facts .fact-title {
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 20px 0;
-}
-
 #facts .container .coast-vid {
-    float: left;
-    width: 350px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border: 1px solid black;
+  float: left;
+  width: 350px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
 }
-
 #facts .container .coastline-img {
-    float: right;
-    width: 350px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    cursor: pointer;
+  float: right;
+  width: 350px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  cursor: pointer;
 }
-
 #facts .container article {
-    font-size: 20px;
-    text-align: justify;
-    margin: 20px 0;
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0;
 }
-
-#facts .container .hazard {
-    margin-top: 32px;
-}
-
 #facts .container article .hazard-img {
-    float: right;
-    width: 350px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    cursor: pointer;
+  float: right;
+  width: 350px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  cursor: pointer;
 }
-
 #facts .container article .hazard-title {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
-
 #facts .container article h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-
 #facts .container article p {
-    font-size: 20px;
-    text-align: justify;
+  font-size: 20px;
+  text-align: justify;
 }
-
+#facts .container .hazard {
+  margin-top: 32px;
+}
+#facts .fact-title {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
 #facts .noah {
-    margin-top: 32px;
+  margin-top: 32px;
 }
-
 #facts .noah h3 {
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 #facts .noah .feu-hazardmap img {
-    width: 100%;
-    margin-top: 0px;
+  width: 100%;
+  margin-top: 0px;
 }
-
 #facts .noah .feu-hazardmap p {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
-/* PETA */
 #peta .container {
-    padding: 32px;
-    padding-top: 10px;
-    box-shadow: 0 0 5px black;
-    border-radius: 15px;
-    text-align: center;
+  padding: 32px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 15px;
+  text-align: center;
 }
-
 #peta .container h2 {
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 #peta .container img {
-    width: 500px;
-    margin-top: 15px;
-    border: 2px outset black;
-    cursor: pointer;
+  width: 500px;
+  margin-top: 15px;
+  border: 2px outset black;
+  cursor: pointer;
 }
 
-/* REFRENCES */
 #references .container {
-    padding: 32px;
-    padding-top: 10px;
-    box-shadow: 0 0 5px black;
-    border-radius: 15px;
+  padding: 32px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 15px;
 }
-
 #references .container h2 {
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 #references .container .source {
-    margin: 20px 0;
-    text-align: justify;
-    word-wrap: break-word;
-    line-height: 25px;
-    padding-left: 35px;
-    text-indent: -35px;
+  margin: 20px 0;
+  text-align: justify;
+  word-wrap: break-word;
+  line-height: 25px;
+  padding-left: 35px;
+  text-indent: -35px;
 }

@@ -1,62 +1,64 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
 section {
-    background-color: #f0e5d7;
+  background-color: #f0e5d7;
 }
 
 #developers .container {
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding-top: 85px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
-
 #developers .container .developer {
-    width: 280px;
-    text-align: center;
-    border: 1px inset black;
-    padding: 10px 15px;
-    margin: 0 20px;
-    border-radius: 15px;
-    background-color: rgb(211, 189, 160);
-    cursor: pointer;
-
-    transition: all 0.4s ease;
+  width: 280px;
+  text-align: center;
+  border: 1px inset black;
+  padding: 10px 15px;
+  margin: 0 20px;
+  border-radius: 15px;
+  background-color: rgb(211, 189, 160);
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-
 #developers .container .developer:hover {
-    background-color: rgb(180, 154, 121);
-    transform: translateY(-15px);
+  background-color: rgb(180, 154, 121);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
-
 #developers .container .developer .dev-img {
-    width: 150px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  width: 150px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-
 #developers .container .developer .dev-name {
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
-
 #developers .container .developer .dev-info {
-    text-align: left;
-    line-height: 20px;
+  text-align: left;
+  line-height: 20px;
 }
-
 #developers .container .developer .socmeds img {
-    width: 50px;
-    margin: 10px;
+  width: 50px;
+  margin: 10px;
 }

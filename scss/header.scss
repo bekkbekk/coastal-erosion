@@ -1,0 +1,72 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(180, 154, 121, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: 0 0 10px black;
+
+    nav {
+        width: 80%;
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        h3 {
+            font-size: 26px;
+            font-weight: 800;
+            color: inherit;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        
+        ul {
+            display: flex;
+
+            li {
+                position: relative;
+                list-style: none;
+                margin: 0 15px;
+                transition: all 0.4s ease;
+                
+                &:hover {
+                    color: black;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: 18px;
+                }
+
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                
+                    content: '';
+                    width: 0;
+                    background-color: black;
+                    height: 3px;
+                
+                    transition: all 0.4s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}

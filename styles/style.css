@@ -26,7 +26,7 @@ section .container {
 
 #home {
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/coastal.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coastal.jpg);
   background-size: cover;
@@ -45,6 +45,7 @@ section .container {
 }
 #home .container .coastal-info {
   margin-left: 50px;
+  margin-bottom: 20px;
 }
 #home .container .coastal-info h2 {
   letter-spacing: 10px;
@@ -67,16 +68,16 @@ section .container {
   text-align: center;
   text-transform: uppercase;
 }
-#definition .enumerations .grid-element {
+#definition .enumerations .container .grid-element {
   border-radius: 15px;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
   padding: 20px;
 }
-#definition .enumerations .grid-element ul {
+#definition .enumerations .container .grid-element ul {
   margin-left: 30px;
 }
-#definition .enumerations .grid-element ul li {
+#definition .enumerations .container .grid-element ul li {
   font-size: 20px;
   margin: 10px 0;
 }
@@ -234,6 +235,7 @@ section .container {
   font-size: 50px;
   text-align: center;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 #references .container .source {
   margin: 20px 0;
@@ -242,4 +244,99 @@ section .container {
   line-height: 25px;
   padding-left: 35px;
   text-indent: -35px;
+}
+
+@media (max-width: 800px) {
+  .hide-mob {
+    display: none;
+  }
+  #home {
+    padding: 0;
+  }
+  #home .container {
+    min-height: 100vh;
+    display: block;
+    text-align: center;
+    padding-top: 85px;
+  }
+  #home .container iframe {
+    width: 280px;
+    height: 160px;
+    margin-top: 20px;
+  }
+  #home .container .coastal-info {
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+  }
+  #home .container .coastal-info h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 45px;
+    margin-bottom: 18px;
+  }
+  #definition .enumerations .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 32px;
+  }
+  #definition .enumerations .grid-element {
+    width: 100%;
+  }
+  #definition .todos .container .content .demo-img {
+    width: 75%;
+    height: 45%;
+  }
+  #definition .after-erosion .container .yt-vid {
+    margin-bottom: 10px;
+    width: 80%;
+    height: 80%;
+  }
+  #facts .container .fact-title {
+    font-size: 40px;
+  }
+  #facts .container .coast-vid {
+    display: none;
+  }
+  #facts .container .coastline-img {
+    display: none;
+  }
+  #facts .container article .hazard-img {
+    display: none;
+  }
+  #facts .fact-title {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  #facts .noah {
+    margin-top: 32px;
+  }
+  #facts .noah h3 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #facts .noah .feu-hazardmap img {
+    width: 100%;
+    margin-top: 0px;
+  }
+  #facts .noah .feu-hazardmap p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  #peta .container h2 {
+    font-size: 40px;
+  }
+  #peta .container img {
+    width: 80%;
+  }
+  #references .container h2 {
+    font-size: 40px;
+  }
 }

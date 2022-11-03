@@ -10,10 +10,7 @@ header {
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
 }
-header nav {
-  width: 80%;
-  max-width: 960px;
-  margin: 0 auto;
+header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,39 +20,76 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 20px;
 }
-header nav h3 {
+header .container .hamburger {
+  border: none;
+  outline: none;
+  outline: none;
+  background: none;
+  display: none;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+header .container .hamburger::after, header .container .hamburger::before,
+header .container .hamburger .bar {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 6px 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+header .container .hamburger.is-active::before {
+  -webkit-transform: rotate(-405deg) translate(-9px, 6px);
+          transform: rotate(-405deg) translate(-9px, 6px);
+}
+header .container .hamburger.is-active::after {
+  -webkit-transform: rotate(405deg) translate(-9px, -8px);
+          transform: rotate(405deg) translate(-9px, -8px);
+}
+header .container .hamburger.is-active .bar {
+  opacity: 0;
+}
+header .container h3 {
   font-size: 26px;
   font-weight: 800;
   color: inherit;
   cursor: pointer;
 }
-header nav h3 a {
+header .container h3 a {
   text-decoration: none;
   color: inherit;
 }
-header nav ul {
+header .container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header nav ul li {
+header .container nav ul li {
   position: relative;
   list-style: none;
   margin: 0 15px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-header nav ul li:hover {
+header .container nav ul li:hover {
   color: black;
 }
-header nav ul li a {
+header .container nav ul li a {
   text-decoration: none;
   color: inherit;
   font-size: 18px;
 }
-header nav ul li::after {
+header .container nav ul li::after {
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -66,6 +100,19 @@ header nav ul li::after {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-header nav ul li:hover::after {
+header .container nav ul li:hover::after {
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  header .container nav {
+    width: 90%;
+    padding: 13px;
+  }
+  header .container nav h3 {
+    font-size: 20px;
+  }
+  header .container .hamburger {
+    display: block;
+  }
 }

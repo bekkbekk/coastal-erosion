@@ -35,6 +35,7 @@ header .container .hamburger {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  z-index: 999;
 }
 header .container .hamburger::after, header .container .hamburger::before,
 header .container .hamburger .bar {
@@ -64,6 +65,7 @@ header .container h3 {
   font-weight: 800;
   color: inherit;
   cursor: pointer;
+  z-index: 999;
 }
 header .container h3 a {
   text-decoration: none;
@@ -103,8 +105,48 @@ header .container nav ul li::after {
 header .container nav ul li:hover::after {
   width: 100%;
 }
+header .mobile-nav-container {
+  display: none;
+  position: absolute;
+  top: -999px;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background-color: black;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+header .mobile-nav-container.is-active {
+  top: 0;
+}
+header .mobile-nav-container .mobile-nav {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0;
+}
+header .mobile-nav-container .mobile-nav ul {
+  text-align: center;
+}
+header .mobile-nav-container .mobile-nav ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 20px 0;
+}
+header .mobile-nav-container .mobile-nav ul li:hover {
+  color: khaki;
+}
+header .mobile-nav-container .mobile-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   header .container nav {
     width: 90%;
     padding: 13px;
@@ -113,6 +155,9 @@ header .container nav ul li:hover::after {
     font-size: 20px;
   }
   header .container .hamburger {
+    display: block;
+  }
+  header .mobile-nav-container {
     display: block;
   }
 }

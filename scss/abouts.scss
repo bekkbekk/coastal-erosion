@@ -16,16 +16,17 @@ section {
         margin: 0 auto;
         padding-top: 85px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
 
         .developer {
             width: 280px;
             text-align: center;
             border: 1px inset black;
             padding: 10px 15px;
-            margin: 0 20px;
+            margin: 10px 20px;
             border-radius: 15px;
             background-color: rgb(211, 189, 160);
             cursor: pointer;
@@ -60,5 +61,11 @@ section {
                 margin: 10px;
             }
         }
+    }
+}
+
+@media (max-width: 815px) {
+    .hide-mob {
+        display: none;
     }
 }

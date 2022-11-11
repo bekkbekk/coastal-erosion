@@ -9,7 +9,6 @@ header {
     box-shadow: 0 0 10px black;
 
     .container {
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,6 +28,7 @@ header {
             width: 35px;
             height: 35px;
             cursor: pointer;
+            z-index: 999;
 
             &::after,
             &::before,
@@ -61,6 +61,7 @@ header {
             font-weight: 800;
             color: inherit;
             cursor: pointer;
+            z-index: 999;
 
             a {
                 text-decoration: none;
@@ -109,23 +110,76 @@ header {
             }
         }
     }
+
+    .mobile-nav-container {
+        display: none;
+        position: absolute;
+        top: -999px;
+        left: 0;
+        right: 0;
+        z-index: 998;
+
+        background-color: black;
+        transition: 0.4s all ease-in-out;
+
+        &.is-active {
+            top: 0;
+        }
+
+        .mobile-nav {
+            width: 80%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 0;
+
+            ul {
+                text-align: center;
+
+                li {
+                    position: relative;
+                    list-style: none;
+                    margin: 0 15px;
+                    transition: all 0.4s ease;
+                    margin: 20px 0;
+
+                    &:hover {
+                        color: khaki;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        font-size: 18px;
+                    }
+                }
+
+            }
+
+
+        }
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
     header {
         .container {
             nav {
                 width: 90%;
                 padding: 13px;
-    
+
                 h3 {
                     font-size: 20px;
                 }
             }
-    
+
             .hamburger {
                 display: block;
             }
+        }
+
+        .mobile-nav-container {
+            display: block;
         }
     }
 }

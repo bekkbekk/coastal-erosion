@@ -246,7 +246,7 @@ section .container {
   text-indent: -35px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .hide-mob {
     display: none;
   }

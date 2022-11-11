@@ -18,20 +18,22 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 #developers .container .developer {
   width: 280px;
   text-align: center;
   border: 1px inset black;
   padding: 10px 15px;
-  margin: 0 20px;
+  margin: 10px 20px;
   border-radius: 15px;
   background-color: rgb(211, 189, 160);
   cursor: pointer;
@@ -61,4 +63,10 @@ section {
 #developers .container .developer .socmeds img {
   width: 50px;
   margin: 10px;
+}
+
+@media (max-width: 815px) {
+  .hide-mob {
+    display: none;
+  }
 }

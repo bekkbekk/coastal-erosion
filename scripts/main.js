@@ -10,5 +10,10 @@ window.addEventListener('load', () => {
         mobileNavCont.classList.toggle('is-active');
     });
 
+    window.addEventListener('scroll', () => {
+        menuBtn.classList.remove('is-active');
+        mobileNavCont.classList.remove('is-active');
+    });
+
     mobileNav.style.paddingTop = header.offsetHeight + "px";
 })

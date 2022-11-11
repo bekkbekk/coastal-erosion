@@ -7,6 +7,7 @@ header {
     backdrop-filter: blur(10px);
     color: white;
     box-shadow: 0 0 10px black;
+    z-index: 997;
 
     .container {
         display: flex;
